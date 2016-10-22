@@ -17,7 +17,7 @@ Use:
  /deop
  /voice
  /devoice
- If one of these channels is used without parameter, it
+ If one of these commands is used without parameter, it
  will send a command to ChanServ op/de/voice/devoice you
  in the channel you are.
 
