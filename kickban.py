@@ -76,7 +76,7 @@ def kickban(cmd, nick):
     elif accounts.get(nick):
         accban = '$a:' + accounts[nick]
     if not ip and not accban:
-        ctx.prnt('KICKBAN: Não foi possível identificar IP nem registro do usuário')
+        ctx.prnt('KICKBAN: I did\'n found user IP nor user account')
         return
 
     commands = []
@@ -89,7 +89,7 @@ def kickban(cmd, nick):
         if cmdWait('CS OP ' + channel, lambda: opflag[channel] in (True, False),
                 {'Channel Operator': chanop, 'Notice': csnotice}):
             if not opflag[channel]:
-                ctx.prnt('KICKBAN: ChanServ não concedeu op')
+                ctx.prnt('KICKBAN: ChanServ did\'t grant op')
                 return
         else:
             ctx.prnt('KICKBAN: ChanServ OP timeout')
