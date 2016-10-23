@@ -31,6 +31,8 @@ __module_description__ = 'extend MODE command to allow more than 4 mode changes 
 import hexchat
 
 def mode(word, word_eol, cmd):
+    if len(word) == 1:
+        return
     sign = None
     modes = []
     args = word[2:]
