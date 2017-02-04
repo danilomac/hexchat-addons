@@ -2,7 +2,7 @@
 """
 Description:
  Shows the city, region and country for each user that join
- a channelthat have yhe ip in the host. The IP data is
+ a channelthat have the ip in the host. The IP data is
  requested only one time per IP and it keep stored untill
  hexchat is closed.
 
